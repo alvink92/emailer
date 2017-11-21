@@ -8,6 +8,9 @@ const keys = require("./config/keys");
 require("./models/User");
 require("./services/passport");
 
+// dynamic PORT address
+const PORT = process.env.PORT || 3000;
+
 // connect mongoose to our mongodb database
 mongoose.connect(keys.mongoURI);
 
@@ -25,6 +28,4 @@ app.use(passport.session());
 // connects authRoutes to app
 authRoutes(app);
 
-// dynamic PORT address
-const PORT = process.env.PORT || 3000;
 app.listen(PORT);
