@@ -9,7 +9,7 @@ require("./models/User");
 require("./services/passport");
 
 // dynamic PORT address
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // connect mongoose to our mongodb database
 mongoose.connect(keys.mongoURI);
