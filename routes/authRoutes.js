@@ -16,6 +16,17 @@ module.exports = app => {
     }
   );
 
+
+// // how to applying middleware
+//   app.use("/api/current_user", (req, res, next) => {
+//     console.log("mw 1");
+//     next();
+//   });
+//   app.use("/api/current_user", (req, res, next) => {
+//     console.log("mw 2");
+//     next();
+//   });
+
   app.get("/api/current_user", (req, res) => {
     res.send(req.user);
   });
