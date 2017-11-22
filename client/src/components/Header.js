@@ -12,12 +12,6 @@ class Header extends Component {
             <li>
               <a href="">Login with Google</a>
             </li>
-            <li>
-              <a href="badges.html">Components</a>
-            </li>
-            <li>
-              <a href="collapsible.html">JavaScript</a>
-            </li>
           </ul>
         </div>
       </nav>
